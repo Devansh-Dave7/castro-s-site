@@ -352,13 +352,14 @@ h1, h2, h3, h4, h5 { font-weight: 700; line-height: 1.15; letter-spacing: -0.01e
 .contact-card h3 { font-size: 1.375rem; margin-bottom: 10px; }
 .contact-card p { color: rgba(255,255,255,0.75); font-size: 0.9375rem; margin-bottom: 24px; }
 .contact-form-embed {
+  --embedded-form-min-height: 889px;
   border-radius: 16px;
   overflow: hidden;
   background: #fff;
 }
 .contact-form-embed iframe {
   width: 100%;
-  min-height: 889px;
+  min-height: var(--embedded-form-min-height);
   display: block;
 }
 .contact-hiring {
